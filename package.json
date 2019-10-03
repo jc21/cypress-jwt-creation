@@ -1,6 +1,6 @@
 {
   "name": "@jc21/cypress-jwt-creation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate a JWT for use your tests",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -30,7 +30,6 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "crypto": "^1.0.1",
     "jsonwebtoken": "^8.5.1"
   }
 }
