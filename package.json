@@ -1,0 +1,36 @@
+{
+  "name": "@jc21/cypress-jwt-creation",
+  "version": "0.0.1",
+  "description": "Generate a JWT for use your tests",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "author": "Jamie Curnow <jc@jc21.com>",
+  "license": "MIT",
+  "keywords": [
+    "cypress",
+    "jwt",
+    "tokens"
+  ],
+  "scripts": {
+    "build": "rm -rf lib && tsc --project tsconfig.build.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jc21/cypress-jwt-creation"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/jsonwebtoken": "^8.3.4",
+    "@types/node": "^12.7.9",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
