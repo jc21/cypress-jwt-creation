@@ -39,7 +39,7 @@ export function JwtCreation(config: Models.IConfig) {
             }
 
             return jwt.sign(claims, privateKeyContent, {
-                algorithm: thisAlgo,
+                algorithm: thisAlgo as jwt.Algorithm,
                 expiresIn: expires,
                 issuer: options.issuer || 'cypress.testing',
             });
