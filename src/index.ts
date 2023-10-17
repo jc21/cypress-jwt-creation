@@ -33,8 +33,8 @@ export function JwtCreation(config: Models.IConfig) {
                     } else {
                         privateKeyContent = fs.readFileSync(thisPrivateKey).toString();
                     }
-                } catch (err) {
-                    throw new Error('Could not generate JWT: Error opening private key: ' + err.message);
+                } catch (err: any) {
+                    throw new Error('Could not generate JWT: Error opening private key: ' + err?.message);
                 }
             }
 
